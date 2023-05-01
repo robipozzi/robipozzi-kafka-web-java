@@ -2,6 +2,7 @@ package com.rpozzi.kafka.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,5 +19,10 @@ public class QuickstartEventController {
 	@PutMapping
 	public void publish(@RequestBody String message) {
 		quickstartEventService.publish(message);
+	}
+	
+	@GetMapping
+	public void publish() {
+		quickstartEventService.publish("Test from Rest Service - GET Method");
 	}
 }

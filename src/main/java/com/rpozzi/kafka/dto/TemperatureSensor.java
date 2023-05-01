@@ -2,7 +2,7 @@ package com.rpozzi.kafka.dto;
 
 import java.util.Random;
 
-public class SensorSimulator {
+public class TemperatureSensor {
 	private int temperature;
 	private int humidity;
 	private final int TEMPERATURE_MIN = -20;
@@ -10,7 +10,7 @@ public class SensorSimulator {
 	private final int HUMIDITY_MIN = 0;
 	private final int HUMIDITY_MAX = 100;
 
-	public SensorSimulator() {
+	public TemperatureSensor() {
 		super();
 		this.temperature = randomTemperature();
 		this.humidity = randomHumidity();
