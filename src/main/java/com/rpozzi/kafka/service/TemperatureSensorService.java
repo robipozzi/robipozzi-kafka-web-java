@@ -16,6 +16,7 @@ public class TemperatureSensorService {
 	private String temperaturesKafkaTopic;
 
 	public TemperatureSensor consume(String in) {
+		logger.debug("===> running consume(String in) method ...");
 		logger.info("Reading from '" + temperaturesKafkaTopic + "' Kafka topic ...");
 		TemperatureSensor temperatureSensor = null;
 		ObjectMapper mapper = new ObjectMapper();

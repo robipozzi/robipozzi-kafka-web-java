@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.kafka.annotation.KafkaListener;
-
 import com.rpozzi.kafka.dto.TemperatureSensor;
 import com.rpozzi.kafka.service.QuickstartEventService;
 import com.rpozzi.kafka.service.TemperatureSensorService;
