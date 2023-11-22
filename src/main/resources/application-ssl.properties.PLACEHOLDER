@@ -10,6 +10,10 @@ logging.level.com.rpozzi.kafka=debug
 
 # Kafka properties
 spring.kafka.bootstrap-servers=localhost:9093
+# SSL settings
+spring.kafka.security.protocol=SSL
+spring.kafka.ssl.trust-store-location=file:///<path to truststore file>
+spring.kafka.ssl.trust-store-password=<truststore password>
 
 # Application properties
 kafka.topic.temperatures=temperatures
