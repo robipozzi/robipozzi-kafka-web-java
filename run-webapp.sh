@@ -5,7 +5,6 @@ SCRIPT=run-webapp.sh
 DEFAULT_TRUSTSTORE=$HOME/opt/robipozzi-kafka/ssl/kafka.client.truststore.jks
 JAR_NAME=robipozzi-kafka-web-java
 VERSION=0.0.1-SNAPSHOT
-PROFILE_OPTION=$1
 ##### Variable section - END
 
 ##### Function section - START
